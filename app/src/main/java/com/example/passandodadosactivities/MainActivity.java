@@ -24,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getApplicationContext(), SegundaActivity.class);
+                //passar dados
+
+                intent.putExtra("nome", "Jose");
+                intent.putExtra("idade", 37);
+
+
                 startActivity(intent);
 
             }
